@@ -477,8 +477,9 @@ html {
 }
 .article-rate__label {
   font-weight: 300;
+  line-height: 0;
   font-size: 17px;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.19px;
   color: rgb(20, 22, 21);
 }
 
@@ -504,7 +505,7 @@ html {
 }
 
 .faq {
-  margin-bottom: 3rem;
+  margin-bottom: 3.2rem;
 }
 .faq__item {
   margin-bottom: 2rem;
@@ -562,7 +563,7 @@ html {
 .sidebar {
   width: 322px;
   position: fixed;
-  right: 14.2%;
+  right: 271px;
 }
 
 .sidebar-rating {
