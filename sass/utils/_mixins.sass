@@ -1,0 +1,31 @@
+// Базовый миксин для основной кнопки проекта
+@mixin red-btn
+    width: 100%
+    border-radius: 6.5rem
+    padding: 1.3rem 0 1.5rem 0
+    background-color: $main-red
+    border: none
+    cursor: pointer
+    font-family: Inter
+    font-weight: 700
+    font-size: 1.4rem
+    color: $white
+    transition: background .2s
+    &:hover
+        color: white
+        background: $hover-btn
+
+// Универсальный миксин для второстепенных заголовков
+@mixin heading-secondary($size, $color)
+    font-family: Manrope
+    font-weight: 700
+    font-size: $size
+    color: $color
+
+// Базовый миксин для основного текста на проекте
+@mixin text-body($size)
+    font-weight: 400
+    font-size: $size
+    color: $light-black
+    span
+        color: $main-red

@@ -1,0 +1,100 @@
+// Правая колонка: фиксированный сайдбар
+.sidebar
+    width: 322px
+    position: fixed
+    right: 14.2%
+
+
+// Оценка статьи (звезды)
+.sidebar-rating
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    gap: 1.75rem
+    margin-bottom: 4rem
+    &__title
+        font-weight: 300
+        font-size: 1.7rem
+        color: $black
+        letter-spacing: 0
+        line-height: 0
+    &__stars
+        display: flex
+        align-items: center
+
+// Автор статьи
+.author-card
+    width: 100%
+    border-radius: 2rem
+    background-color: $light-grey
+    padding: 1.3rem 1.1rem 1.5rem 1.5rem
+    margin-bottom: 1.9rem
+    &__body
+        display: flex
+        align-items: center
+        gap: 1.9rem
+    &__title
+        font-weight: 500
+        font-size: 1.7rem
+        line-height: 2rem
+        letter-spacing: .1px
+        color: $dark
+        margin-bottom: .4rem
+    &__position
+        font-weight: 300
+        font-size: 1.4rem
+        line-height: 1.8rem
+        letter-spacing: -.14px
+        color: $black
+
+// Приведём клиента
+.sidebar-cta
+    padding: 2.7rem 2.9rem
+    background-color: $white
+    border: .1rem solid $light-grey
+    border-radius: 2rem
+    box-shadow: 1px 5px 7px -16px rgba(144, 144, 144, 0.36)
+    text-align: center
+    font-family: "Inter"
+    margin-bottom: 1.9rem
+    &__title
+        font-weight: 600
+        font-size: 2rem
+        color: $black
+        line-height: 2.5rem
+        letter-spacing: 0
+        margin-bottom: 1.5rem
+    &__text
+        font-weight: 400
+        font-size: 1.2rem
+        text-align: left
+        line-height: 1.25
+        letter-spacing: -.1px
+        margin-bottom: 2rem
+    &__button
+        @include red-btn
+        letter-spacing: 0
+
+// Кейсы по теме
+.sidebar-cases
+    border-radius: 2rem
+    padding: 2.6rem 3rem
+    background-color: rgba(65, 65, 65, 1)
+    box-shadow: 1px 5px 7px -16px rgba(144, 144, 144, 0.36)
+    text-align: center
+    font-family: "Inter"
+    &__title
+        font-weight: 600
+        font-size: 2rem
+        line-height: 2.8rem
+        letter-spacing: -0.15px
+        color: $white
+        margin-bottom: 2rem
+    &__button
+        @include red-btn
+        margin-bottom: 2rem
+    &__list
+    &__item
+        margin-bottom: 2rem
+        &:last-child
+            margin-bottom: 0

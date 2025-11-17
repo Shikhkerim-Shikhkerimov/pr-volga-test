@@ -1,0 +1,21 @@
+// Готовые типографические классы для повторяющихся заголовков.
+// Используют общий миксин heading-secondary с разными размерами.
+.heading-secondary-18
+    @include heading-secondary($size: 1.8rem, $color: $light-black)
+
+.heading-secondary-24
+    @include heading-secondary($size: 2.4rem, $color: $black)
+
+.heading-secondary-32
+    @include heading-secondary($size: 3.2rem, $color: $black)
+
+
+// Готовые размерные варианты основного текста.
+.text-body--18
+    @include text-body($size: 1.8rem)
+
+.text-body--20
+    @include text-body($size: 2rem)
+
+.text-body--24
+    @include text-body($size: 2.4rem)

@@ -1,0 +1,152 @@
+// Блок “Вы узнаете”
+.article-section
+    margin-bottom: 3rem
+    &:last-child
+        margin-bottom: 0
+    &--intro
+        margin-bottom: 4.8rem
+    &__title
+        margin-bottom: 1.7rem
+        line-height: 4.1rem
+    &__table-title
+        margin-bottom: 3rem
+        line-height: 4.19rem
+    &__content-text
+        line-height: 145%
+        letter-spacing: 0
+        margin-bottom: 1.77rem
+        &:last-child
+            margin-bottom: 0
+    &__title-clients
+        margin-bottom: 3rem
+        line-height: 120%
+    &__content-list
+        margin-bottom: 2.49rem
+    &__content-item
+        margin-bottom: 1.45rem
+        &:last-child
+            margin-bottom: 0
+    &__meaning-title
+        line-height: 160%
+        letter-spacing: 0
+    &__meaning-text
+        line-height: 131%
+        letter-spacing: 0
+    &__ser-inf-wrapper
+        max-width: 53.7rem
+        display: flex
+        align-items: center
+        gap: 2rem
+    &__ser-inf-line
+        width: 0
+        height: 14.7rem
+        border-radius: 1.2rem
+        border-left: 12px solid rgba(230, 230, 237, 1)
+    &__ser-inf-text
+        font-weight: 300
+        font-size: 18px
+        line-height: 127%
+        letter-spacing: -.2px
+        color: $light-black
+    &__subtitle
+        margin-bottom: 1.3rem
+    &--quote
+        position: relative
+        margin-bottom: 3rem
+    &__quote-icon
+        position: absolute
+        top: -9%
+        left: 0%
+        z-index: -1
+    &__quote-wrapper
+        padding: .5rem 3.1rem 2.4rem 3.1rem
+    &__quote-text
+        margin-bottom: 2.3rem
+        line-height: 1.4
+        letter-spacing: 0
+    &__quote-author
+    &__quote-name
+        font-weight: 500
+        font-size: 1.8rem
+        line-height: 2.4rem
+        letter-spacing: 0
+        color: $dark
+        margin-bottom: .4rem
+    &__quote-position
+        font-weight: 300
+        font-size: 1.8rem
+        line-height: 1.8rem
+        letter-spacing: -.2px
+        color: $light-black
+
+
+
+.article-list
+    &__item
+        margin-bottom: 1.2rem
+        display: flex
+        align-items: center
+        gap: 1rem
+        &:last-child
+            margin-bottom: 0
+    &__item-text
+        line-height: 1.59
+        letter-spacing: 0
+    &__link
+        text-decoration: none
+        color: $main-red
+        line-height: 1.33
+        letter-spacing: 0
+
+// Таблица
+.table-wrapper
+    overflow: hidden
+    border-radius: 1rem
+    border: 1px solid rgba(17, 16, 47, 1)
+
+.rating-table
+    width: 100%
+    border-collapse: collapse
+    &__head
+        background-color: $light-grey
+    &__body
+        padding: 18px 24px
+        vertical-align: top
+    &__cell
+        padding: 1.89rem 4rem 1.89rem 3rem
+        vertical-align: top
+        font-weight: 300
+        font-size: 16px
+        line-height: 134%
+        letter-spacing: -.19px
+        color: $black
+        text-align: left
+        border-bottom: 1px solid rgba(169, 169, 169, 1)
+        border-right: 1px solid rgba(169, 169, 169, 1)
+        vertical-align: middle
+        &:last-child
+            border-right: none
+        &:nth-child(1)
+            width: 25.91%
+        &:nth-child(2)
+            width: 12.39%
+            text-align: center
+            padding: 2rem 1rem
+            letter-spacing: -.19px
+        &:nth-child(3)
+            width: 12.68%
+            text-align: center
+        &:nth-child(4)
+            width: 50%
+        &--head
+            font-weight: 600
+            font-size: 20px
+            line-height: 145%
+            letter-spacing: -.1px
+            color: $black
+            text-align: left
+            font-weight: 600
+
+.rating-table__body tr:last-child .rating-table__cell
+    border-bottom: none
+
