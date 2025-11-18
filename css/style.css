@@ -537,8 +537,8 @@ html {
   max-width: 46.9rem;
   font-size: 2rem;
   padding: 1.8rem 0 2rem 0;
-  line-height: 112%;
-  letter-spacing: 0;
+  line-height: 120%;
+  letter-spacing: -0.15px;
   margin-top: 1rem;
 }
 .faq__button:hover {
@@ -562,8 +562,8 @@ html {
 
 .sidebar {
   width: 322px;
-  position: fixed;
-  right: 271px;
+  position: sticky;
+  top: 20px;
 }
 
 .sidebar-rating {
