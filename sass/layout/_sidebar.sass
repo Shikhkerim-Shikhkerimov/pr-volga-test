@@ -3,24 +3,48 @@
     width: 322px
     position: sticky
     top: 20px
-
+    @media (max-width: 920px)
+        width: 100%
+    @media (max-width: 890px)
+        width: 100%
+        top: 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        order: -1
+        z-index: auto
+        overflow: visible
+        margin-bottom: 2rem
+        position: sticky
+        background: rgba(255, 255, 255, 0.9)
+        margin-bottom: 0
+    @media (max-width: 560px)
+        width: 111%
+        top: 0
 
 // Оценка статьи (звезды)
 .sidebar-rating
+    width: 100%
     display: flex
-    justify-content: flex-end
     align-items: center
-    gap: 1.75rem
+    justify-content: center
+    gap: 1rem
     margin-bottom: 4rem
+    @media (max-width: 890px)
+        margin-bottom: 2rem
+    @media (max-width: 560px)
+        display: none
     &__title
         font-weight: 300
         font-size: 1.7rem
         color: $black
-        letter-spacing: 0
-        line-height: 0
+        line-height: 1%
+        letter-spacing: .49px
+        @media (max-width: 560px)
     &__stars
         display: flex
         align-items: center
+        justify-content: flex-end
 
 // Автор статьи
 .author-card
@@ -29,10 +53,21 @@
     background-color: $light-grey
     padding: 1.3rem 1.1rem 1.5rem 1.5rem
     margin-bottom: 1.9rem
+    @media (max-width: 920px)
+        padding: 1.2rem
+        margin-bottom: 1.3rem
+    @media (max-width: 890px)
+        width: max-content
+    @media (max-width: 560px)
+        width: 100%
     &__body
         display: flex
         align-items: center
         gap: 1.9rem
+        @media (max-width: 890px)
+            justify-content: center
+    &__image
+        width: 100%
     &__title
         font-weight: 500
         font-size: 1.7rem
@@ -40,12 +75,16 @@
         letter-spacing: .1px
         color: $dark
         margin-bottom: .4rem
+        @media (max-width: 920px)
+            font-size: 1.4rem
     &__position
         font-weight: 300
         font-size: 1.4rem
         line-height: 1.8rem
         letter-spacing: -.14px
         color: $black
+        @media (max-width: 920px)
+            font-size: 1.2rem
 
 // Приведём клиента
 .sidebar-cta
@@ -57,6 +96,12 @@
     text-align: center
     font-family: "Inter"
     margin-bottom: 1.9rem
+    @media (max-width: 920px)
+        padding: 2rem 2rem
+        margin-bottom: 1.5rem
+    @media (max-width: 560px)
+        padding: 1rem
+        margin-bottom: 0
     &__title
         font-weight: 600
         font-size: 2rem
@@ -64,6 +109,8 @@
         line-height: 2.5rem
         letter-spacing: 0
         margin-bottom: 1.5rem
+        @media (max-width: 920px)
+            font-size: 1.7rem
     &__text
         font-weight: 400
         font-size: 1.2rem
@@ -71,6 +118,8 @@
         line-height: 1.25
         letter-spacing: -.1px
         margin-bottom: 2rem
+        @media (max-width: 920px)
+            text-align: center
     &__button
         @include red-btn
         letter-spacing: 0
@@ -83,6 +132,10 @@
     box-shadow: 1px 5px 7px -16px rgba(144, 144, 144, 0.36)
     text-align: center
     font-family: "Inter"
+    @media (max-width: 920px)
+        padding: 2rem 2.3rem
+    @media (max-width: 890px)
+        display: none
     &__title
         font-weight: 600
         font-size: 2rem
@@ -90,11 +143,14 @@
         letter-spacing: -0.15px
         color: $white
         margin-bottom: 2rem
+        @media (max-width: 920px)
+            font-size: 1.7rem
     &__button
         @include red-btn
         margin-bottom: 2rem
-    &__list
     &__item
         margin-bottom: 2rem
         &:last-child
             margin-bottom: 0
+    &__img
+        width: 100%

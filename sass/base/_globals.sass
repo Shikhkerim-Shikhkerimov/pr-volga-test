@@ -1,10 +1,15 @@
 .container
-    width: 192rem
+    max-width: 1920px
     margin: 0 auto
     font-family: 'Manrope'
 
+    @media (max-width: 1440px)
+        padding: 0 2rem
+    @media (max-width: 560px)
+        padding: 0 4.1rem 0 4.2rem
+
 .page
     &__container
-        width: 134.8rem
+        max-width: 1348px
         margin: 0 auto
         margin-bottom: 8.419rem
